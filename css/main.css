@@ -1,0 +1,366 @@
+:root{ /*global styling+declarations: Variables: https://www.w3schools.com/css/css3_variables.asp*/
+	--CTAColour: #468CFF;
+	--textColour: #212429;
+	--bgColour: #FCFCFC;
+	/* Linear Gradients: https://www.w3schools.com/css/css3_gradients.asp*/
+	--gradientColour: linear-gradient(135deg, rgba(251, 203, 79, 25%), rgba(253, 60, 89, 20%), rgba(111, 163, 249, 20%));
+	--dropShadow: 0em 0em 1em rgba(0, 0, 0, 0.05); 	/*Blur box: https://www.w3schools.com/cssref/css3_pr_box-shadow.asp*/
+
+	font-family: Lato, sans-serif;
+	color: var(--textColour);
+	background-color: var(--bgColour);
+}
+
+
+.navContainer{
+	background-color: white;
+	box-shadow: var(--dropShadow);
+}
+
+/*-----------Section Styling---------*/
+.sectionContainer{
+	margin-bottom: 2.5rem;
+	margin-top: 0;
+}
+
+.note{
+	font-size: 1rem;
+	margin: 0.5rem;
+	padding: 1em;
+	font-style: italic;
+	background-image: var(--gradientColour);
+}
+
+.patternOverview{
+	margin: 0.5rem;
+}
+/*-----------Colour Palette----------*/
+.colourSwatchOverview{
+	margin: 0.5rem 0.5rem 0.5rem 0.5rem; /*top, left, right, btm*/
+	border: 0.5rem;
+	border-style: solid;
+	border-color: gray;
+	border-width: 0.15rem;
+}
+
+.colourSwatch{
+	height:5rem;
+}
+
+.colourSwatchDetail{
+}
+
+/*-----------Typography-----------*/
+h1, h2, h3, h4{
+	font-family: Poppins, sans-serif;
+}
+
+h1 {
+	font-size: 2rem;
+}
+
+h2 {
+	font-size: 1.75rem;
+}
+
+h3 {
+	font-size: 1.5rem;
+}
+
+h4 {
+
+	font-size: 1.25rem;
+	margin: 0.5rem;
+	margin-left: 0;
+}
+
+body {
+	font-size: 1rem;
+}
+
+p a{
+	font-weight: bold;
+}
+
+/*----------Code Snippet------------*/
+.codeSnippetContainer{
+	background-color: lightgray;
+	padding: 1.5rem;
+	margin-top: 2rem;
+	max-height: 15rem;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	margin-bottom: 3rem;
+}
+
+.codeSnippetPattern{
+	margin-bottom: 1rem;
+	padding: 1em;
+}
+
+.codeSnippetTitle{
+	font-weight: bold;
+	margin-bottom: 0.5rem;
+}
+
+.codeSnippetPattern code{
+	font-size: 0.75rem;
+}
+
+
+/*-----------Interactive Elements-----------*/
+/*CTA Button*/
+.btnStyle{
+	display: inline-block;
+	background-color: var(--CTAColour);
+	border-radius: 0.75rem;
+	width: 12rem;
+	font-size:1rem;
+	color: white;
+	text-align: center;
+	text-decoration:none;
+	padding: 0.75em;
+}
+
+.btnStyle:hover{
+	font-weight: bold;
+	background-color: #2678ff;
+}
+
+.btnStyle:focus, .btnStyle:active{
+	color: var(--textColour);
+}
+
+/*Form Buttons*/
+button.btnStyle, input.btnStyle{
+	border-style: none;
+}
+
+.btnStyleDisabled{
+	display: inline-block;
+	background-color: var(--CTAColour);
+	border-radius: 0.75rem;
+	border-style: none;
+	width: 12rem;
+	font-size:1rem;
+	color: white;
+	text-align: center;
+	text-decoration:none;
+	padding: 0.75em;	
+	opacity: 50%;
+	cursor: not-allowed;
+	margin-left: 1rem;
+}
+
+.btnReset{
+	display: inline-block;
+	background-color: white;
+	border-radius: 0.75rem;
+	border: 0.15rem solid var(--CTAColour);
+	width: 12rem;
+	font-size:1rem;
+	color: var(--CTAColour);
+	text-align: center;
+	text-decoration:none;
+	padding: 0.75em;
+	opacity: 50%;
+	margin-top: 2rem;
+	margin-left: 1rem;
+}
+
+.btnReset:hover{
+	background-color: var(--CTAColour);
+	font-weight: bold;
+	color:white;
+	opacity: 100%;
+}
+
+/*Form Fields*/
+input{
+	margin: 0.2rem;
+	width: 28em;
+	background-color: white;
+	box-shadow: var(--dropShadow);
+}
+
+input[type=text]:focus{
+	/*background-color: #2222;*/
+}
+
+label{
+	color: var(--textColour);
+	font-weight: bold;
+}
+
+/*-----------Feature Module Pattern-----------*/
+/*Tutorial: https://www.w3schools.com/css/css_navbar_horizontal.asp*/
+/*Nav Bar Module*/ 
+.logo{
+	margin: 0.5rem;
+	margin-top: 1rem;
+}
+
+.navBarContainer{
+	background-color: white;
+	box-shadow: var(--dropShadow);
+}
+
+.navButtons {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+/*	overflow: hidden;*/
+}
+
+.navButtons li{
+	float: left;
+	margin: 0.15rem;
+}
+
+.navButtons a {
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	padding: 0.25rem;
+	color: var(--textColour);
+	margin: 1.25rem;
+	margin-top: 1.75rem;
+}
+
+.navButtons a:hover{
+	font-weight: bold;
+}
+
+.navButtons a:focus, a:active{
+	text-decoration: underline;
+}
+
+/*Feature Module*/
+.modulePatternContainer{
+	background-color: white;
+	box-shadow: var(--dropShadow);
+}
+
+/*Feature Module Buttons*/
+.dot{
+  height: 1em;
+  width: 1em;
+  background-color: var(--CTAColour);
+  border-radius: 50%;
+  display: inline-block;
+  margin-top: 2.5rem;
+  margin-left: 3em;
+}
+
+
+.featureBtn{
+	display: inline-block;
+	background-color: white;
+	box-shadow: var(--dropShadow);
+	opacity:50%;
+	font-size:1rem;
+	color: var(--textColour);
+	font-weight: bold;
+	text-align: left;
+	text-decoration:none;
+	padding: 0.75em;
+	padding-left: 5em;
+	min-height: 5rem;
+}
+
+.featureBtn:hover, .featureBtn a:focus, a:active{
+	opacity:100%;
+}
+
+/*image*/
+.imgContainer img{ /*https://stackoverflow.com/questions/15685666/changing-image-sizes-proportionally-using-css*/
+	width: 60rem;
+	height: 25rem;
+	object-fit:cover;
+}
+
+.productSpecsHeader{
+	margin-bottom: 0.5rem;
+}
+
+.productSpecs{
+	list-style-type:none;
+	margin-left: -2.5rem;
+	margin-top: -1rem;
+}
+
+.productSpecsTitle{
+	text-decoration:underline;
+}
+
+/*Grid Structure*/
+.gridStructurePatternContainer{
+	background-color: gray;
+	opacity: 20%;
+}
+
+.gridOne, .gridTwo, .gridThree, .gridFour, .gridFive, .gridSix, .gridSeven, .gridEight, .gridNine, .gridTen, .gridEleven, .gridTwelve{
+	background-color: red;
+	opacity: 75%;
+}
+
+
+/*Recommendation Module*/
+.productCard img{
+	width: 25rem;
+}
+.productCard:last-of-type{
+	background-image: var(--gradientColour);
+}
+
+.productCardText{
+	margin-top: 10rem;
+	margin-left: 3rem;
+	width:clamp(7ch, 80%, 13ch);
+}
+
+.productCardText a:hover{
+	font-weight: bold;
+}
+
+.productCardText a{
+	text-decoration: none;
+}
+
+#productCTA{
+	margin-top: 2rem;
+	margin-left: 3rem;
+}
+
+.colourSwatch{
+	overflow: auto;
+}
+
+.colourSwatchDetail{
+	list-style-type:none;
+	margin-left:-0.5rem; /*centers text*/
+}
+
+
+
+/*-----------Colours-----------*/
+#CTAColour{
+	background-color: var(--CTAColour);
+}
+
+
+#gColour{
+	background-image: var(--gradientColour);
+}
+
+#textColour{
+	background-color: var(--textColour);
+}
+
+#bgColour{
+	background-color: var(--bgColour);
+}
+
+ul, ol{
+	line-height: 1.5rem;
+}

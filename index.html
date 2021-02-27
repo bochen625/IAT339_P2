@@ -1,0 +1,281 @@
+<!--
+	Basic structure of HTML from Paul's tutorial:
+	https://www.youtube.com/watch?v=adI6G7Y-0xE&feature=youtu.be
+-->
+<!doctype html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Style Guide</title>
+
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/grids.css">
+	</head>
+
+	<body>
+		<div class="gridContainer">
+			<nav class="navContainer">
+				<h1>Style Guide</h1>
+
+				<ul class="navButtons">
+					<li><a href="index.html">Style Guide</a></li>
+					<li><a href="patternLibrary.html">Pattern Library</a></li>
+					<li><a href="wireframes.html">Wireframes</a></li>
+					<li><a href="citations.html">Citations</a></li>
+				</ul>
+			</nav>
+
+			<!------------------Colour Palette------------------>
+			<div class="sectionContainer" id="colourSection">
+				<h2>Colour Palette</h2>
+				<p class="note">Description: Used for interactive elements such as the CTA buttons, background, gradients, and text. Created by Shaanti and Bonnie, and maintained by Shaanti</p>
+				
+				<div class="patternContainer">
+					<div class="colourSwatchOverview">
+						<div class="colourSwatch" id="gColour">
+						</div>
+						<ul class="colourSwatchDetail">
+							<li>Gradient Colours</li>
+							<li>R251 G203 B79 - R253 G60 B89 - R111 G163 B249</li> 
+							<li>#FBCB4F - #FD3C59 - #6FA3F9</li>
+							<li>Direction: Linear</li>
+						</ul>
+					</div>
+
+					<div class="colourSwatchOverview">
+						<div class="colourSwatch" id="CTAColour">
+						</div>
+						<ul class="colourSwatchDetail">
+							<li>Call to Action</li>
+							<li>R70 G140 B255</li> 
+							<li>#468CFF</li>
+						</ul>
+					</div>
+
+					<div class="colourSwatchOverview">
+						<div class="colourSwatch" id="textColour">
+						</div>
+						<ul class="colourSwatchDetail">
+							<li>Text Colour</li>
+							<li>R33 G36 B41</li>
+							<li>#212429</li>
+						</ul>
+					</div>
+
+					<div class="colourSwatchOverview">
+						<div class="colourSwatch" id="bgColour">
+						</div>
+						<ul class="colourSwatchDetail">
+							<li>Background Colour</li>
+							<li> R252 G252 B252</li>
+							<li>#FCFCFC</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+
+			<!---------Typography--------->
+			<div class="sectionContainer" id="typographySection">
+				<h2>Typography</h2>
+				<p class="note">Description: Used as headers, subtitles, and paragraph text throughout the website. Created and maintained by Shaanti.</p>
+				
+				<div class="patternContainer">
+					<div class="patternOverview">
+					<!--H1-->
+						<h4>Heading 1</h4>
+						<h1>Lumens</h1>
+						<div class="codeSnippetContainer">
+							<div class="codeSnippetPattern">
+								<p class="codeSnippetTitle">HTML</p>
+								<code>&lt;h1&gt;Lumens&lt;/h1&gt;</code>
+							</div>
+
+							<div class="codeSnippetPattern">
+								<p class="codeSnippetTitle">CSS</p>
+								<code>
+									h1 {<br>
+										font-family: Poppins, sans-serif;<br>
+										font-size: 2rem;<br>
+										color: var(--textColour);<br>
+									}
+								</code>
+							</div>
+						</div>
+					</div>
+
+					<!--H2-->
+					<div class="patternOverview">
+						<h4>Heading 2</h4>
+						<h2>About the Product</h2>
+						<div class="codeSnippetContainer">
+							<div class="codeSnippetPattern">
+								<p class="codeSnippetTitle">HTML</p>
+								<code>&lt;h2&gt;About the Product&lt;/h2&gt;</code>
+							</div>
+
+							<div class="codeSnippetPattern">
+								<p class="codeSnippetTitle">CSS</p>
+								<code>
+									h2 {<br>
+										font-family: Poppins, sans-serif;<br>
+										font-size: 1.75rem;<br>
+										color: var(--textColour);<br>
+									}
+								</code>
+							</div>
+						</div>
+					</div>
+
+					<!--H3-->
+					<div class="patternOverview">
+						<h4>Heading 3</h4>
+						<h3>Explore our collections and find a light that is suitable for your needs.</h3>
+						
+						<div class="codeSnippetContainer">
+							<div class="codeSnippetPattern">
+								<p class="codeSnippetTitle">HTML</p>
+								<code>&lt;h3&gt;Explore our collections and find a light that is suitable for your needs.&lt;/h3&gt;</code>
+							</div>
+
+							<div class="codeSnippetPattern">
+								<p class="codeSnippetTitle">CSS</p>
+								<code>
+									h3 {<br>
+										font-family: Poppins, sans-serif;<br>
+										font-size: 1.5rem;<br>
+										color: var(--textColour);<br>
+									}
+								</code>
+							</div>
+						</div>
+					</div>
+
+					<!--Subtitle-->
+					<div class="patternOverview">					
+						<h4>Heading 4</h4>
+						<h4>Feature 1: Wireless Charging</h4>
+						<div class="codeSnippetContainer">
+							<div class="codeSnippetPattern">
+								<p class="codeSnippetTitle">HTML</p>
+								<code>&lt;h4&gt;Feature 1: Wireless Charging&lt;/h4&gt;</code>
+							</div>
+						
+							<div class="codeSnippetPattern">
+								<p class="codeSnippetTitle">CSS</p>
+								<code>
+									h4 {
+										font-family: Poppins, sans-serif;<br>
+										font-size: 1.25rem;<br>
+										margin: 0.5rem;<br>
+										margin-left: 0;<br>
+										color: var(--textColour);<br>
+									}
+								</code>
+							</div>						
+						</div>
+					</div>
+
+					<!--Paragraph/body-->
+					<div class="patternOverview">					
+						<h4>Paragraph</h4>
+						<p>Designed to illuminate your space so you can do the task you need to do.</p>
+						<div class="codeSnippetContainer">
+							<div class="codeSnippetPattern">
+								<p class="codeSnippetTitle">HTML</p>
+								<code>&lt;p&gt;Designed to illuminate your space so you can do the task you need to do.&lt;/p&gt;</code>
+							</div>
+
+							<div class="codeSnippetPattern">
+								<p class="codeSnippetTitle">CSS</p>
+								<code>
+									p {<br>
+										font-family: Lato, sans-serif;
+										font-size: 1rem;<br>
+										color: var(--textColour);<br>
+									}
+								</code>
+							</div>	
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class ="sectionContainer" id="listSection">
+				<h2>Lists</h2>
+				<p class="note">Description: Used for listing product specifications. Maintained by Bonnie </p>
+				
+				<div class="patternContainer">
+					<div class="patternOverview">
+						<!--Bullet List-->
+						<h4>Bullet List</h4>
+						<ul>
+							<li>Product type: Desk Lamp</li>
+							<li>Material: Alder wood and metal</li>
+							<li>Colour: White</li>
+							<li>Switch Type: On-off</li>
+						</ul>
+
+						<div class="codeSnippetContainer">
+							<div class="codeSnippetPattern">
+								<p class="codeSnippetTitle">HTML</p>
+								<code>
+									&lt;ul&gt;<br>
+									&lt;li&gt;Product type: Desk Lamp&lt;/li&gt;<br>
+									&lt;li&gt;Material: Alder wood and metal&lt;/li&gt;<br>
+									&lt;li&gt;Colour: White&lt;/li&gt;<br>
+									&lt;li&gt;Switch Type: On-off&lt;/li&gt;<br>
+									&lt;/ul&gt;
+								</code>
+							</div>
+
+							<div class="codeSnippetPattern">
+								<p class="codeSnippetTitle">CSS</p>
+								<code>
+									ul{<br>
+										line-height: 1.5rem;<br>
+									}
+								</code>
+							</div>	
+						</div>
+					</div>
+					
+					<!--Number List-->
+					<div class="patternOverview">
+						<h4>Number List</h4>
+						<ol>
+							<li>Dimensions: 25"H x 10"W x 7"D</li>
+							<li>Base: 1"H x 10"W x 5'D</li>
+							<li>Overall Weight: 5.5lbs</li>
+						</ol>
+						<div class="codeSnippetContainer">
+							<div class="codeSnippetPattern">
+								<p class="codeSnippetTitle">HTML</p>
+								<code>
+								&lt;ol&gt;<br>
+								&lt;li&gt;Dimensions: 25"H x 10"W x 7"D&lt;/li&gt;<br>
+								&lt;li&gt;Base: 1"H x 10"W x 5'D&lt;/li&gt;<br>
+								&lt;li&gt;Overall Weight: 5.5lbs&lt;/li&gt;<br>
+								&lt;/ol&gt;
+								</code>
+							</div>
+
+							<div class="codeSnippetPattern">
+								<p class="codeSnippetTitle">CSS</p>
+								<code>
+									ol{<br>
+										line-height: 1.5rem;<br>
+									}
+								</code>
+							</div>	
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

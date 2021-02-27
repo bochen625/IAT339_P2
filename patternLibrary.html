@@ -1,0 +1,710 @@
+<!doctype html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Pattern Library</title>
+
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/grids.css">
+	</head>
+
+	<body>
+		<div class="gridContainer">
+			<nav class="navContainer">
+				<h1>Pattern Library</h1>
+
+				<ul class="navButtons">
+					<li><a href="index.html">Style Guide</a></li>
+					<li><a href="patternLibrary.html">Pattern Library</a></li>
+					<li><a href="wireframes.html">Wireframes</a></li>
+					<li><a href="citations.html">Citations</a></li>
+				</ul>
+			</nav>
+
+			<div class="sectionContainer" id="interactiveElements">
+				<h2>Interactive elements</h2>
+				<div class="patternContainer">
+					<h4>In-text Link</h4>
+					<p class="note">Description: Used as an interactive. Created and maintained by Bonnie</p>
+					
+					<div class="patternOverview">
+						<p>Visit our <a href="https://www.lumens.com/">desk lamp</a> collection.</p>
+						
+
+						<div class="codeSnippetContainer">
+							<div class="codeSnippetPattern">
+								<p class="codeSnippetTitle">HTML</p>
+								<code>&lt;p&gt;Visit our &lt;a href="#"&gt;desk lamp&lt;/a&gt; collection.&lt;/p&gt;</code>
+							</div>
+
+							<div class="codeSnippetPattern">
+								<p class="codeSnippetTitle">CSS</p>
+								<code>
+									p a{<br>
+										font-weight: bold;<br>
+									}
+								</code>
+							</div>
+						</div>
+					</div>
+
+
+					<!--CTA-->
+					<h4>CTA Button</h4>
+					<p class="note">Description: Used as an interactive. Created and maintained by Bonnie</p>
+
+					<div class="patternOverview">
+						<a href="#" class="btnStyle">Default Button</a>
+
+
+						<div class="codeSnippetContainer">
+							<div class="codeSnippetPattern">
+								<p class="codeSnippetTitle">HTML</p>
+								<code>&lt;a href="#" class="btnStyle"&gt;Default Button&lt;/a&gt;</code>
+							</div>
+
+							<div class="codeSnippetPattern">
+								<p class="codeSnippetTitle">CSS</p>
+								<code>
+									.btnStyle{<br>
+										display: inline-block;<br>
+										background-color: #468CFF;<br>
+										border-radius: 0.75rem;<br>
+										width: 12rem;<br>
+										font-size:1rem;<br>
+										color: white;<br>
+										text-align: center;<br>
+										text-decoration:none;<br>
+										padding: 0.75em;<br>
+									}<br>
+
+									.btnStyle:hover{<br>
+										font-weight: bold;<br>
+										background-color: #2678ff;<br>
+									}<br>
+
+									.btnStyle:focus, .btnStyle:active{<br>
+										color: #212429;<br>
+									}
+								</code>
+							</div>
+						</div>
+					</div>
+
+					<!--Form Buttons-->
+					<h4>Form Buttons</h4>
+					<p class="note">Description: Used to submit information or reset a form field (ie: Filters, contact us). Maintained by Bonnie</p>
+					
+					<div class="patternOverview">
+						<button class="btnStyle">Submit</button>
+						<button class="btnStyleDisabled">Submit Disabled</button>
+
+						<div class="codeSnippetContainer">
+							<div class="codeSnippetPattern">
+								<p class="codeSnippetTitle">HTML</p>
+								<code>&lt;button class="btnStyleDisabled"&gt;Submit Disabled&lt;/button&gt;</code>
+							</div>
+
+							<div class="codeSnippetPattern">
+								<p class="codeSnippetTitle">CSS</p>
+								<code>
+									.btnStyleDisabled{<br>
+										display: inline-block;<br>
+										background-color: #468CFF;<br>
+										border-radius: 0.75rem;<br>
+										border-style: none;<br>
+										width: 12rem;<br>
+										font-size: 1rem;<br>
+										color: white;<br>
+										text-align: center;<br>
+										text-decoration: none;<br>
+										padding: 0.75em;<br>
+										opacity: 50%;<br>
+										cursor: not-allowed;<br>
+									}
+								</code>
+							</div>
+						</div>
+					</div>				
+
+					<h4>Form Fields</h4>
+					<p class="note">Description: Used as a text-input. Maintained by Johnathan</p>
+
+					<div class="patternOverview">
+						<div class="patternStyleContainer">
+							<form action="/action_page.php" method="get">
+								<div class="patternStyle">
+									<label for="fName">First Name:</label>
+									<input type="text" id="fName" name="fName">
+								</div>
+
+								<div class="patternStyle">
+									<label for="email">E-mail:</label>
+									<input type="text" id="email" name="email">
+									<button class ="btnStyle" type="submit" value="Submit">Submit</button>
+									<button class ="btnReset" type="reset" value="Reset">Reset</button>
+								</div>
+							</form>
+						</div>
+
+
+						<div class="codeSnippetContainer">
+							<div class="codeSnippetPattern">
+								<p class="codeSnippetTitle">HTML</p>
+								<code>
+									&lt;form action="/action_page.php" method="get"&gt;<br>
+										&lt;label for="fName"&gt;First Name:&lt;/label&gt;<br>
+										&lt;input type="text" id="fName" name="fName"&gt;<br>
+										&lt;label for="email"&gt;E-mail:&lt;/label&gt;<br>
+										&lt;input type="text" id="email" name="email"&gt;<br>
+										&lt;button class ="btnStyle" type="submit" value="Submit"&gt;Submit&lt;/button&gt;<br>
+										&lt;button class ="btnReset" type="reset" value="Reset"&gt;Reset&lt;/button&gt;<br>
+									&lt;/form&gt;
+								</code>
+							</div>
+
+							<div class="codeSnippetPattern">
+								<p class="codeSnippetTitle">CSS</p>
+								<code>
+									input{<br>
+										margin: 0.2rem;<br>
+										width: 28em;<br>
+										background-color: white;<br>
+										box-shadow: 0em 0em 1em rgba(0, 0, 0, 0.05);<br>
+									}<br>
+
+									label{<br>
+										color: #212429;<br>
+										font-weight: bold;<br>
+									}<br>
+
+									.btnReset{<br>
+										display: inline-block;<br>
+										background-color: white;<br>
+										border-radius: 0.75rem;<br>
+										border: 0.15rem solid #468CFF;<br>
+										width: 12rem;<br>
+										font-size:1rem;<br>
+										color: #468CFF;<br>
+										text-align: center;<br>
+										text-decoration:none;<br>
+										padding: 0.75em;<br>
+										opacity: 50%;<br>
+										margin-top: 2rem;<br>
+										margin-left: 1rem;<br>
+									}<br>
+
+									.btnReset:hover{<br>
+										background-color: #468CFF;<br>
+										font-weight: bold;<br>
+										color:white;<br>
+										opacity: 100%;<br>
+									}<br>
+
+									button.btnStyle, input.btnStyle{<br>
+										border-style: none;<br>
+									}
+								</code>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="sectionContainer" id="modularPatterns">
+				<h2>Modular Patterns</h2>
+
+				<div class="patternContainer">
+					<h4>Navigation bar</h4>
+					<p class="note">Description: Used to move through different pages and sections of the website. Created and maintained by Shaanti and Bonnie.</p>
+
+
+					<div class="patternOverview">
+						<nav class="navBarContainer">
+							<a href="#" class="logo"> <img src="img/lumiLogo.svg" alt="logo of Lumi"> </a>
+							<ul class="navButtons">
+								<li><a href="#">Products</a></li>
+								<li><a href="#">Inspiration</a></li>
+								<li><a href="#">About Us</a></li>
+								<li><a href="#"> <img src="img/searchIcon.svg" alt="search icon"></a></li>
+								<li><a href="#"> <img src="img/cartIcon.svg" alt="shopping cart icon"></a></li>
+							</ul>
+						</nav>
+
+
+						<div class="codeSnippetContainer">
+							<div class="codeSnippetPattern">
+								<p class="codeSnippetTitle">HTML</p>
+								<code>
+									&lt;nav class="navBarContainer"&gt;<br>
+										&lt;a href="#" class="logo"&gt; &lt;img src="img/lumiLogo.svg" alt="logo of Lumi"&gt; &lt;/a&gt;<br>
+										&lt;ul class="navButtons"&gt;<br>
+											&lt;li&gt;&lt;a href="#"&gt;Products&lt;/a&gt;&lt;/li&gt;<br>
+											&lt;li&gt;&lt;a href="#"&gt;Inspiration&lt;/a&gt;&lt;/li&gt;<br>
+											&lt;li&gt;&lt;a href="#"&gt;About Us&lt;/a&gt;&lt;/li&gt;<br>
+											&lt;li&gt;&lt;a href="#"&gt;&lt;img src="img/searchIcon.svg" alt="search icon"&gt;&lt;/a&gt;&lt;/li&gt;<br>
+											&lt;li&gt;&lt;a href="#"&gt;&lt;img src="img/cartIcon.svg" alt="shopping cart icon"&gt;&lt;/a&gt;&lt;/li&gt;<br>
+										&lt;/ul&gt;<br>
+									&lt;/nav&gt;
+								</code>
+							</div>
+
+							<div class="codeSnippetPattern">
+								<p class="codeSnippetTitle">CSS</p>
+								<code>
+									.navBarContainer{<br>
+										display:grid;<br>
+										grid-template-columns:repeat(12, 1fr);<br>
+										grid-template-rows: 1fr;<br>
+										grid-column-gap: 0.5rem;<br>
+										padding-left: 2rem;<br>
+										padding-right: 2rem;<br>
+										<br>
+										background-color: white;<br>
+										box-shadow: var(--dropShadow);<br>
+									}<br>
+									<br>
+									.logo{<br>
+										grid-column: 1/span 2;<br>
+										margin: 0.5rem;<br>
+										margin-top: 1rem;<br>
+									}<br>
+									<br>
+									.navButtons{<br>
+										grid-column: 9/span 4;<br>
+										<br>
+										list-style-type: none;<br>
+										margin: 0;<br>
+										padding: 0;<br>
+									}<br>
+									<br>
+									.navButtons li{<br>
+										float: left;<br>
+										margin: 0.15rem;<br>
+									}<br>
+									<br>
+									.navButtons a {<br>
+										display: block;<br>
+										text-decoration: none;<br>
+										text-align: center;<br>
+										padding: 0.25rem;<br>
+										color: var(--textColour);<br>
+										margin: 1.25rem;<br>
+										margin-top: 1.75rem;<br>
+									}<br>
+									<br>
+									.navButtons a:hover{<br>
+										font-weight: bold;<br>
+									}<br>
+									<br>
+									.navButtons a:focus, a:active{<br>
+										text-decoration: underline;<br>
+									}
+								</code>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="patternContainer">
+					<h4>Product Detail: Feature Module</h4>
+					<p class="note">Description: Used to show the features of the product. Created and maintained by Johnathan</p>
+
+
+					<div class="patternOverview">
+						<div class="modulePatternContainer">
+							<div class="descriptionContainer">
+								<h2>About the Lamp</h2>
+								<p>Designed to illuminate your space so you can do the task you need to do. The CK Desk Lamp offers great control over how much light you need and where you need it. The base of this task lamp also provides a surface for you to put your phone and allows for wireless charging.</p>
+							</div>
+						
+							<a href="#" class="featureBtn">Wireless Charging <span class="dot"></span></a>
+							<a href="#" class="featureBtn">Dimmable Lighting <span class="dot"></span></a>
+							<a href="#" class="featureBtn">180 Arm Adjustability <span class="dot"></span></a>
+							<div class="imgContainer">
+								<img src="img/feature1.png" alt="circular wooden lamp base with a metal X in the center">
+							</div>
+							<h2 class="productSpecsHeader">Product Specifications</h2>
+							<ul class="productSpecs">
+								<li class="productSpecsTitle">Specifications:</li>
+								<li>Product type: Desk Lamp</li>
+								<li>Material: Alder wood and metal</li>
+								<li>Colour: White</li>
+								<li>Switch Type: On-off</li>
+							</ul>
+							<ul class="productSpecs">
+								<li class="productSpecsTitle">Weight and Dimensions</li>
+								<li>Dimensions: 25"H x 10"W x 7"D</li>
+								<li>Base: 1"H x 10"W x 5'D</li>
+								<li>Overall Weight: 5.5lbs</li>
+							</ul>
+							<ul class="productSpecs">
+								<li class="productSpecsTitle">Light</li>
+								<li>Light Direction: Down (Adjustable)</li>
+								<li>Light Temperature: Warm</li>
+								<li>Number of lights</li>
+								<li>Light Bulb: Standard, A19</li>
+							</ul>
+						</div>
+
+
+						<div class="codeSnippetContainer">
+							<div class="codeSnippetPattern">
+								<p class="codeSnippetTitle">HTML</p>
+								<code>
+									&lt;div class="modulePatternContainer"&gt;<br>
+										&lt;div class="descriptionContainer"&gt;<br>
+											&lt;h2&gt;About the Lamp&lt;/h2&gt;<br>
+											&lt;p&gt;Designed to illuminate your space so you can do the task you need to do. The CK Desk Lamp offers great control over how much light you need and where you need it. The base of this task lamp also provides a surface for you to put your phone and allows for wireless charging.&lt;/p&gt;<br>
+										&lt;/div&gt;<br>
+										<br>
+										&lt;a href="#" class="featureBtn"&gt;Wireless Charging &lt;span class="dot"&gt;&lt;/span&gt;&lt;/a&gt;<br>
+										&lt;a href="#" class="featureBtn"&gt;Dimmable Lighting &lt;span class="dot"&gt;&lt;/span&gt;&lt;/a&gt;<br>
+										&lt;a href="#" class="featureBtn"&gt;180 Arm Adjustability &lt;span class="dot"&gt;&lt;/span&gt;&lt;/a&gt;<br>
+										&lt;div class="imgContainer"&gt;<br>
+											&lt;img src="img/feature1.png" alt="circular wooden lamp base with a metal X in the center"&gt;<br>
+										&lt;/div&gt;
+										<br>
+										&lt;h2 class="productSpecsHeader"&gt;Product Specifications&lt;/h2&gt;<br>
+										<br>
+										&lt;ul class="productSpecs"&gt;<br>
+											&lt;li class="productSpecsTitle"&gt;Specifications:&lt;/li&gt;
+											&lt;li&gt;Product type: Desk Lamp&lt;/li&gt;<br>
+											&lt;li&gt;Material: Alder wood and metal&lt;/li&gt;<br>
+											&lt;li&gt;Colour: White&lt;/li&gt;<br>
+											&lt;li&gt;Switch Type: On-off&lt;/li&gt;<br>
+										&lt;/ul&gt;<br>
+										<br>
+										&lt;ul class="productSpecs"&gt;<br>
+											&lt;li class="productSpecsTitle"&gt;Weight and Dimensions&lt;/li&gt;<br>
+											&lt;li&gt;Dimensions: 25"H x 10"W x 7"D&lt;/li&gt;<br>
+											&lt;li&gt;Base: 1"H x 10"W x 5'D&lt;/li&gt;<br>
+											&lt;li&gt;Overall Weight: 5.5lbs&lt;/li&gt;<br>
+										&lt;/ul&gt;<br>
+										<br>
+										&lt;ul class="productSpecs"&gt;<br>
+											&lt;li class="productSpecsTitle"&gt;Light&lt;/li&gt;<br>
+											&lt;li&gt;Light Direction: Down (Adjustable)&lt;/li&gt;<br>
+											&lt;li&gt;Light Temperature: Warm&lt;/li&gt;<br>
+											&lt;li&gt;Number of lights&lt;/li&gt;<br>
+											&lt;li&gt;Light Bulb: Standard, A19&lt;/li&gt;<br>
+										&lt;/ul&gt;<br>
+									&lt;/div&gt;
+								</code>
+							</div>
+
+							<div class="codeSnippetPattern">
+								<p class="codeSnippetTitle">CSS</p>
+								<code>
+									/*Feature Pattern Grid Container*/<br>
+									.modulePatternContainer{<br>
+										display:grid;<br>
+										grid-template-columns: repeat(12, 1fr);<br>
+										grid-template-rows: 1.5fr 0.75fr 0.75fr 0.75fr 0.5fr 1.25fr;<br>
+										grid-column-gap: 2em;<br>
+										grid-row-gap: 2em;<br>
+										background-color: white;<br>
+									}<br>
+									<br>
+									/*Description*/<br>
+									.descriptionContainer{<br>
+										grid-column: 2/span 5;<br>
+										grid-row: 1/span 1;<br>
+									}<br>
+									<br>
+									/*Buttons*/<br>
+									.featureBtn{<br>
+										grid-column: 2/span 3;<br>
+										display: inline-block;<br>
+										background-color: white;<br>
+										box-shadow: var(--dropShadow);<br>
+										opacity:50%;<br>
+										font-size:1rem;<br>
+										color: var(--textColour);<br>
+										font-weight: bold;<br>
+										text-align: left;<br>
+										text-decoration:none;<br>
+										padding: 0.75em;<br>
+										padding-left: 5em;<br>
+										min-height: 5rem;<br>
+									}<br>
+									<br>
+									.featureBtn:first-of-type{<br>
+										grid-row: 2/span 1;<br>
+									}<br>
+									<br>
+									.featureBtn:nth-of-type(2){<br>
+										grid-row: 3/span 1;<br>
+									}<br>
+
+									.featureBtn:last-of-type{<br>
+										grid-row: 4/span 1;<br>
+									}<br>
+									<br>
+									.featureBtn:hover, .featureBtn a:focus, a:active{<br>
+										opacity:100%;<br>
+									}<br>
+									<br>
+									.dot{<br>
+									  height: 1em;<br>
+									  width: 1em;<br>
+									  background-color: var(--CTAColour);<br>
+									  border-radius: 50%;<br>
+									  display: inline-block;<br>
+									  margin-top: 2.5rem;<br>
+									  margin-left: 3em;<br>
+									}<br>
+									<br>
+									/*Product image*/<br>
+									.imgContainer{<br>
+										grid-column: 5/span 7;<br>
+										grid-row: 2/span 3;<br>
+									}<br>
+									<br>
+									.imgContainer img{<br>
+									width: 60rem;<br>
+									height: 25rem;<br>
+									object-fit:cover;<br>
+									}<br>
+									<br>
+									/*Product Specifications*/<br>
+									.productSpecsHeader{<br>
+										grid-column: 2/span 10;<br>
+										grid-row: 5/span 1;<br>
+										margin-bottom: 0.5rem;<br>
+									}<br>
+									<br>
+									.productSpecsTitle{<br>
+										text-decoration:underline;<br>
+									}<br>
+									<br>
+									.productSpecs{<br>
+										grid-row: 6/span 1;<br>
+										list-style-type:none;<br>
+										margin-left: -2.5rem;<br>
+										margin-top: -1rem;<br>
+									}<br>
+									.productSpecs:first-of-type{<br>
+										grid-column: 2/span 3;<br>
+									}<br>
+									<br>
+									.productSpecs:nth-of-type(2){<br>
+										grid-column: 5/span 3;<br>
+									}<br>
+									<br>
+									.productSpecs:last-of-type{<br>
+										grid-column: 8/span 3;<br>
+									}<br>
+								</code>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="patternContainer">
+					<h4>Grid Structure</h4>
+					<p class="note">Description: A 12-column grid structure that is used to organize content on the web page. Created and maintained by Shaanti</p>
+					
+					<div class="patternOverview">
+						<div class="gridStructurePatternContainer">
+							<div class="gridOne"></div>
+							<div class="gridTwo"></div>
+							<div class="gridThree"></div>
+							<div class="gridFour"></div>
+							<div class="gridFive"></div>
+							<div class="gridSix"></div>
+							<div class="gridSeven"></div>
+							<div class="gridEight"></div>
+							<div class="gridNine"></div>
+							<div class="gridTen"></div>
+							<div class="gridEleven"></div>
+							<div class="gridTwelve"></div>
+						</div>
+
+						<div class="codeSnippetContainer">
+							<div class="codeSnippetPattern">
+								<p class="codeSnippetTitle">HTML</p>
+								<code>
+									&lt;div class="gridContainer"&gt;<br>
+									&lt;/div&gt;
+								</code>
+							</div>
+
+							<div class="codeSnippetPattern">
+								<p class="codeSnippetTitle">CSS</p>
+								<code>
+									.gridContainer{<br>
+										display:grid;<br>
+										grid-template-columns:repeat(12, 1fr);<br>
+										grid-column-gap: 1.5rem;<br>
+										min-height: 100vh;<br>
+									}
+								</code>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="patternContainer">
+					<h4>Recommendation Module</h4>
+					<p class="note">Description: Used to show products, as well as a CTA to view more products. Created and maintained by Bonnie</p>
+					
+					<div class="patternOverview">
+						<div class="recModContainer">
+							<h2 class="descriptionTitle">Similar Products</h2>
+
+							<div class="productCard">
+								<a href="#"><img src="img/light1.png" alt="metal floor lamp with a circular bulb"></a>
+								<div class="productDetails">
+									<p class="productCardPName">Ambient Floor Lamp</p>
+									<p class="productCardPPrice">$139</p>
+								</div>
+							</div>
+
+							<div class="productCard">
+								<a href="#"><img src="img/light2.png" alt="black metal lamp"></a>
+								<div class="productDetails">
+									<p class="productCardPName">Hang-over Floor Lamp</p>
+									<p class="productCardPPrice">$129</p>
+								</div>
+							</div>
+
+							<div class="productCard">
+								<a href="#"><img src="img/light3.png" alt="a black metal wall lamp"></a>
+								<div class="productDetails">
+									<p class="productCardPName">Swinging Golf Wall Lamp</p>
+									<p class="productCardPPrice">$99</p>
+								</div>
+							</div>
+
+							<div class="productCard">
+								<h3 class="productCardText"> Explore our collections and find a light that is suitable for your needs.</h3>
+								<a href="#" class="btnStyle" id="productCTA">View More</a>
+							</div>
+						</div>
+
+						<div class="codeSnippetContainer">
+							<div class="codeSnippetPattern">
+								<p class="codeSnippetTitle">HTML</p>
+								<code>
+									&lt; class="recModContainer"&gt;<br>
+										&lt;h2 class="descriptionTitle"&gt;Similar Products&lt;/h2&gt;<br>
+
+										&lt;div class="productCard"&gt;<br>
+											&lt;a href="#"&gt;&lt;img src="img/light1.png" alt="metal floor lamp with a circular bulb"&gt;&lt;/a&gt;<br>
+											&lt;div class="productDetails"&gt;<br>
+												&lt;p class="productCardPName"&gt;Ambient Floor Lamp&lt;/p&gt;<br>
+												&lt;p class="productCardPPrice"&gt;$139&lt;/p&gt;<br>
+											&lt;/div&gt;<br>
+										&lt;/div&gt;<br>
+
+										&lt;div class="productCard"&gt;<br>
+											&lt;a href="#"&gt;&lt;img src="img/light2.png" alt="black metal lamp"&gt;&lt;/a&gt;<br>
+											&lt;div class="productDetails"&gt;<br>
+												&lt;p class="productCardPName"&gt;Hang-over Floor Lamp&lt;/p&gt;<br>
+												&lt;p class="productCardPPrice"&gt;$129&lt;/p&gt;<br>
+											&lt;/div&gt;<br>
+										&lt;/div&gt;<br>
+
+										&lt;div class="productCard"&gt;<br>
+											&lt;a href="#"&gt;&lt;img src="img/light3.png" alt="a black metal wall lamp"&gt;&lt;/a&gt;<br>
+											&lt;div class="productDetails"&gt;<br>
+												&lt;p class="productCardPName"&gt;Swinging Golf Wall Lamp&lt;/p&gt;<br>
+												&lt;p class="productCardPPrice"&gt;$99&lt;/p&gt;<br>
+											&lt;/div&gt;<br>
+										&lt;/div&gt;<br>
+
+										&lt;div class="productCard"&gt;<br>
+											&lt;h3 class="productCardText"&gt; Explore our collections and find a light that is suitable for your needs.&lt;/h3&gt;<br>
+											&lt; href="#" class="btnStyle" id="productCTA"&gt;View More&lt;/a&gt;<br>
+										&lt;/div&gt;<br>
+									&lt;/div&gt;<br>
+
+										&lt;/div&gt;<br>
+										&lt;div class="productCardCTA"&gt;<br>
+											&lt;p class="productCardCTADescription"&gt; Explore our collections and find a light that is suitable for your needs.
+											&lt;a href="#" class="ctaBtn"&gt;Continue&lt;/a&gt;&lt;/p&gt;<br>
+										&lt;/div&gt;<br>
+									&lt;/div&gt;
+								</code>
+							</div>
+
+							<div class="codeSnippetPattern">
+								<p class="codeSnippetTitle">CSS</p>
+								<code>
+									.recModContainer{<br>
+										display:grid;<br>
+										grid-template-columns: repeat(12, 1fr);<br>
+										grid-template-rows: 0.2fr 1fr 0.2fr;<br>
+										grid-column-gap: 2em;<br>
+										grid-row-gap: 2em;<br>
+									}<br>
+									<br>
+									.descriptionTitle{<br>
+										grid-column: 1/span 12;<br>
+									}<br>
+									<br>
+									.productDetails{<br>
+										display: grid;<br>
+										grid-template-columns: 1fr 0.1fr<br>
+									}<br>
+									<br>
+									.productCard img{<br>
+										width: 25rem;<br>
+									}<br>
+									<br>
+									.productCard:first-of-type{<br>
+										grid-column: 1/span 3;<br>
+										grid-row-start: 2;<br>
+									}<br>
+									<br>
+									.productCard:nth-of-type(2){<br>
+										grid-column: 4/span 3;<br>
+										grid-row-start: 2;<br>
+									}<br>
+									<br>
+									.productCard:nth-of-type(3){<br>
+										grid-column: 7/span 3;<br>
+										grid-row-start: 2;<br>
+									}<br>
+									<br>
+									.productCard:last-of-type{<br>
+										grid-column: 10/span 3;<br>
+										grid-row-start: 2;<br>
+										background-image: var(--gradientColour);<br>
+									}<br>
+									<br>
+									.productCardText{<br>
+										margin-top: 10rem;<br>
+										margin-left: 3rem;<br>
+										width:clamp(7ch, 80%, 13ch);<br>
+									}<br>
+									<br>
+									.productCardText a:hover{<br>
+										font-weight: bold;<br>
+									}<br>
+									<br>
+									.productCardText a{<br>
+										text-decoration: none;<br>
+									}<br>
+									<br>
+									#productCTA{<br>
+										margin-top: 2rem;<br>
+										margin-left: 3rem;<br>
+									}<br>
+								</code>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</body>
+</html>
