@@ -38,6 +38,11 @@ h1{
 	grid-column: 1/span 10;
 }
 
+/*Module typography*/
+.moduleHeader{
+	grid-column: 1/span 6;
+}
+
 
 /*-----------Website Colours-----------*/
 .colourSwatchOverview:first-of-type{
@@ -200,6 +205,25 @@ h1{
 	display:grid;
 	grid-template-columns: repeat(2, 1fr);
 	grid-column-gap: 2rem;
+}
+
+/*Our Values Module*/
+.companyValueContainer{
+	display:grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-column-gap: 1.5rem
+}
+
+.companyValueCards:first-of-type{
+	grid-column: 1/span 4;
+}
+
+.companyValueCards:nth-of-type(2){
+	grid-column: 5/span 4;
+}
+
+.companyValueCards:last-of-type{
+	grid-column: 9/span 4;
 }
 
 @media screen and (max-width: 125em){

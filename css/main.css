@@ -341,7 +341,17 @@ label{
 	margin-left:-0.5rem; /*centers text*/
 }
 
+/*-----------Value Module-----------*/
+.companyValueCards{
+	background-image: var(--gradientColour);
+	min-height: 40vh;
+}
 
+.companyValues{
+	text-align: center;
+	padding-top: 10rem;
+	font-size: 1.25rem;
+}
 
 /*-----------Colours-----------*/
 #CTAColour{
