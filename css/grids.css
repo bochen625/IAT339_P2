@@ -19,6 +19,7 @@
 	padding-left: 4rem;
 }
 
+
 h1{
 	grid-column: 1/span 7;
 }
@@ -294,6 +295,62 @@ h1{
 		grid-row-start: 4;
 		grid-column: 2/span 3;
 	}
+}
+
+/*-----------Footer Modular Patterns-----------*/
+/*Footer*/
+.footBarContainer{
+	display:grid;
+	grid-template-columns:repeat(12, 1fr);
+	grid-template-rows: 1fr;
+	grid-column-gap: 0.5rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+
+.footerButtons{
+	grid-column: 1/span 2;
+}
+
+.footerLogo{
+	grid-column: 11/span 2;
+
+}
+
+.copyRight{
+	grid-column: 5/span 3;
+}
+
+.iconF{
+	grid-column: 8/span 1;
+}
+
+.iconT{
+	grid-column: 9/span 1;
+}
+
+.iconL{
+	grid-column: 10/span 1;
+
+}
+/*-----------Quiz CTA Module-----------*/
+
+.quizBannerContainer{
+	display:grid;
+	grid-template-columns:repeat(12, 1fr);
+	grid-template-rows: 1fr;
+	grid-column-gap: 0.5rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+
+.quizBH{
+	grid-column: 2/span 4;
+}
+
+.quizCTA
+{
+	grid-column: 2/span 2;
 }
 
 @media screen and (max-width: 85em){

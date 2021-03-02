@@ -74,6 +74,12 @@ h4 {
 	margin-left: 0;
 }
 
+h5{
+	font-family: OpenSans, sans-serif;
+	font-size: 1.25
+	font-weight: 50rem;
+}
+
 body {
 	font-size: 1rem;
 }
@@ -81,6 +87,8 @@ body {
 p a{
 	font-weight: bold;
 }
+
+
 
 /*----------Code Snippet------------*/
 .codeSnippetContainer{
@@ -349,24 +357,60 @@ label{
 
 .footerButtons {
 	list-style-type: none;
-	margin: 0;
+	margin: 1.5rem;
 	padding: 0;
 /*	overflow: hidden;*/
 }
 
 .footerButtons li{
-	float: right;
+	float: left;
 	margin: 0.15rem;
 }
 
 .footerButtons a {
 	display: block;
+	font-family: Opensans, sans-serif;
+	font-size: 0.75rem;
 	text-decoration: none;
 	text-align: center;
 	padding: 0.25rem;
 	color: var(--textColour);
-	margin: 1.25rem;
-	margin-top: 1.75rem;
+	margin: 0.1rem;
+	margin-top: 0.25rem;
+}
+
+.footerLogo{
+	margin: 0.5rem;
+	margin-top: 13rem;
+}
+
+.copyRight{
+	margin: 0.5rem;
+	margin-top: 15.5rem;
+}
+
+.iconF, .iconT, .iconL{
+	margin: 0.5rem;
+	margin-top: 15rem;
+}
+
+/*-----------Quiz CTA Module-----------*/
+.quizBannerContainer{
+	background-image: url('../img/quizbanner.png');
+	background-repeat: no-repeat;
+	height: 30rem;
+	background-size: cover;
+	box-shadow: var(--dropShadow);
+}
+
+.quizBH{
+	margin: 0.5rem;
+	margin-top: 7rem;
+}
+
+.quizCTA{
+	margin: 0.5rem;
+	min-height: 20rem;
 }
 
 
