@@ -957,6 +957,105 @@
 							<button class="quizBtnStyle">19-24 inches</button>
 							<button class="quizBtnStyle">Over 24 inches</button>
 						</div>
+
+						<div class="codeSnippetContainer">
+							<div class="codeSnippetPattern">
+								<p class="codeSnippetTitle">HTML</p>
+								<code>
+									&lt;div class="quizContainer"&gt;<br>
+										&lt;div class="progressBarBorder"&gt;<br>
+											&lt;div class="progressBarProgress"&gt;&lt;/div&gt;<br>
+										&lt;/div&gt;<br>
+										&lt;p class="questionNumber"&gt;Q2 of 7:&lt;/p&gt;<br>
+										&lt;h2 class="quizQuestion"&gt; What should the height of the lamp be?&lt;/h2&gt;<br>
+										&lt;button class="quizBtnStyle"&gt;Under 12 inches&lt;/button&gt;<br>
+										&lt;button class="quizBtnStyle"&gt;13-18 inches&lt;/button&gt;<br>
+										&lt;button class="quizBtnStyle"&gt;19-24 inches&lt;/button&gt;<br>
+										&lt;button class="quizBtnStyle"&gt;Over 24 inches&lt;/button&gt;<br>
+									&lt;/div&gt;
+								</code>
+							</div>
+
+							<div class="codeSnippetPattern">
+								<p class="codeSnippetTitle">CSS</p>
+								<code>
+									.quizContainer{<br>
+										background-color: white;<br>	
+										display:grid;<br>
+										grid-template-columns: repeat(12, 1fr);<br>
+										grid-template-rows: 0.5fr 0.25fr 0.25fr 0.25fr 0.25fr 0.25fr 0.25fr 0.25fr;<br>
+									}<br>
+									<br>
+									.progressBarBorder{<br>
+										width: 98%;<br>
+										height: 1.5rem;<br>
+										background-color: white;<br>
+										border-radius: 0.2rem;<br>
+										border: 0.1rem solid var(--textColour);<br>
+										grid-column: 4/span 6;<br>
+										grid-row: 2/span 1;<br>
+									}<br>
+									<br>
+									.progressBarProgress{<br>
+										width: 14%;<br>
+										height: 1.4rem;<br>
+										background-color: var(--CTAColour);<br>
+										border-radius: 0.2rem;<br>
+										margin-top: -0.05rem;<br>
+									}<br>
+									<br>
+									.questionNumber{<br>
+										grid-column: 4/span 6;<br>
+										grid-row: 3/span 1;<br>
+									}<br>
+									<br>
+									.quizQuestion{<br>
+										margin-top: -1rem;<br>
+										grid-column: 4/span 6;<br>
+										grid-row: 4/span 1;<br>
+									}<br>
+									<br>
+									.quizBtnStyle{<br>
+										display: inline-block;<br>
+										background-color: white;<br>
+										border-radius: 0.75rem;<br>
+										border: 0.1rem solid var(--CTAColour);<br>
+										width: 95%;<br>
+										font-weight: bold;<br>
+										font-size:1rem;<br>
+										color: var(--CTAColour);<br>
+										text-align: center;<br>
+										text-decoration:none;<br>
+										padding: 0.75em;<br>
+										margin-bottom: 1.5rem;<br>
+									}<br>
+									<br>
+									.quizBtnStyle:hover{<br>
+										border: 0.2rem solid var(--CTAColour);<br>
+									}<br>
+									<br>
+									.quizBtnStyle:first-of-type{<br>
+										grid-column: 4/span 3;<br>
+										grid-row: 5/span 1;<br>
+									}<br>
+									<br>
+									.quizBtnStyle:nth-of-type(2){<br>
+										grid-column: 7/span 3;<br>
+										grid-row: 5/span 1;<br>
+									}<br>
+									<br>
+									.quizBtnStyle:nth-of-type(3){<br>
+										grid-column: 4/span 3;<br>
+										grid-row: 6/span 1;<br>
+									}<br>
+									<br>
+									.quizBtnStyle:last-of-type{<br>
+										grid-column: 7/span 3;<br>
+										grid-row: 6/span 1;<br>
+									}
+								</code>
+							</div>
+						</div>
 					</div>
 				</div>
 
@@ -965,12 +1064,11 @@
 					<h4> Quiz Module: Image selection</h4>		
 					<div class="patternOverview">
 						<div class="quizContainer">
-							<p class="questionNumber">Q5 of 7:</p>
-							<h2 class="quizQuestion"> What will you use the lamp for?</h2>
-
 							<div class="progressBarBorder">
 								<div class="progressBarProgress" id="quizQFive"></div>
 							</div>
+							<p class="questionNumber">Q5 of 7:</p>
+							<h2 class="quizQuestion"> What will you use the lamp for?</h2>
 
 							<!-- Embedding an image in a button class: https://stackoverflow.com/questions/8683528/embed-image-in-a-button-element -->
 							<div class="quizCard">
@@ -983,25 +1081,156 @@
 							<div class="quizCard">
 								<form action="/action_page.php" method="get">
 									<input type="image" src="img/officeWork.png" class="quizCardImg" alt="person working on a laptop">
-									<label for="readingNWriting">Office Work</label>
-								<form action="/action_page.php" method="get">
+									<label for="officeWork">Office Work</label>
+								</form>
 							</div>
 
 							<div class="quizCard">
 								<form action="/action_page.php" method="get">
 									<input type="image" src="img/decoration.png" class="quizCardImg" alt="decorative candle lights">
-									<label for="readingNWriting">Decoration</label>
+									<label for="deco">Decoration</label>
 								</form>
 							</div>
 							
 							<div class="quizCard">
-								<input type="image" src="img/lightUpRoom.png" class="quizCardImg" alt="living room with a lot of lights">
-								<label for="readingNWriting">To light up a room</label>
+								<form action="/action_page.php" method="get">
+									<input type="image" src="img/lightUpRoom.png" class="quizCardImg" alt="living room with a lot of lights">
+									<label for="lightRoom">To light up a room</label>
+								</form>
 							</div>
 
 							<div class="quizCard">
-								<input type="image" src="img/other.png" class="quizCardImg" alt="blank image">
-								<label for="readingNWriting">Other</label>
+								<form action="/action_page.php" method="get">
+									<input type="image" src="img/other.png" class="quizCardImg" alt="blank image">
+									<label for="other">Other</label>
+								</form>
+							</div>
+						</div>
+
+						<div class="codeSnippetContainer">
+							<div class="codeSnippetPattern">
+								<p class="codeSnippetTitle">HTML</p>
+								<code>
+									&lt;div class="quizContainer"&gt;<br>
+										&lt;div class="progressBarBorder"&gt;<br>
+											&lt;div class="progressBarProgress"&gt;&lt;/div&gt;<br>
+										&lt;/div&gt;<br>
+										&lt;p class="questionNumber"&gt;Q5 of 7:&lt;/p&gt;<br>
+										&lt;h2 class="quizQuestion"&gt; What will you use the lamp for?&lt;/h2&gt;<br>
+										&lt;div class="quizCard"&gt;<br>
+											&lt;form action="/action_page.php" method="get"&gt;<br>
+												&lt;input type="image" src="img/reading.png" class="quizCardImg" alt="books stacked on each other"&gt;<br>
+												&lt;label for="readingNWriting"&gt;Reading / Writing&lt;/label&gt;<br>
+											&lt;/form&gt;<br>
+										&lt;/div&gt;<br>
+
+										&lt;div class="quizCard"&gt;
+											&lt;form action="/action_page.php" method="get"&gt;<br>
+												&lt;input type="image" src="img/officeWork.png" class="quizCardImg" alt="person working on a laptop"&gt;
+												&lt;label for="officeWork"&gt;Office Work&lt;/label&gt;<br>
+											&lt;/form&gt;<br>
+										&lt;/div&gt;<br>
+
+										&lt;div class="quizCard"&gt;
+											&lt;form action="/action_page.php" method="get"&gt;<br>
+												&lt;input type="image" src="img/decoration.png" class="quizCardImg" alt="decorative candle lights"&gt;
+												&lt;label for="deco"&gt;Decoration&lt;/label&gt;<br>
+											&lt;/form&gt;<br>
+										&lt;/div&gt;<br>
+										
+										&lt;div class="quizCard"&gt;
+											&lt;form action="/action_page.php" method="get"&gt;<br>
+												&lt;input type="image" src="img/lightUpRoom.png" class="quizCardImg" alt="living room with a lot of lights"&gt;<br>
+												&lt;label for="lightRoom"&gt;To light up a room&lt;/label&gt;<br>
+											&lt;/form&gt;<br>
+										&lt;/div&gt;<br>	
+
+										&lt;div class="quizCard"&gt;
+											&lt;form action="/action_page.php" method="get"&gt;<br>
+												&lt;input type="image" src="img/other.png" class="quizCardImg" alt="blank image"&gt;<br>
+												&lt;label for="other"&gt;Other&lt;/label&gt;<br>
+											&lt;/form&gt;<br>
+										&lt;/div&gt;<br>		
+									&lt;/div&gt;
+								</code>
+							</div>
+
+							<div class="codeSnippetPattern">
+								<p class="codeSnippetTitle">CSS</p>
+								<code>
+									.quizContainer{<br>
+										background-color: white;<br>	
+										display:grid;<br>
+										grid-template-columns: repeat(12, 1fr);<br>
+										grid-template-rows: 0.5fr 0.25fr 0.25fr 0.25fr 0.25fr 0.25fr 0.25fr 0.25fr;<br>
+									}<br>
+									<br>
+									.progressBarBorder{<br>
+										width: 98%;<br>
+										height: 1.5rem;<br>
+										background-color: white;<br>
+										border-radius: 0.2rem;<br>
+										border: 0.1rem solid var(--textColour);<br>
+										grid-column: 4/span 6;<br>
+										grid-row: 2/span 1;<br>
+									}<br>
+									<br>
+									.progressBarProgress{<br>
+										width: 14%;<br>
+										height: 1.4rem;<br>
+										background-color: var(--CTAColour);<br>
+										border-radius: 0.2rem;<br>
+										margin-top: -0.05rem;<br>
+									}<br>
+									<br>
+									#quizQFive{<br>
+										width: 57%;<br>
+									}<br>
+									<br>
+									.questionNumber{<br>
+										grid-column: 4/span 6;<br>
+										grid-row: 3/span 1;<br>
+									}<br>
+									<br>
+									.quizQuestion{<br>
+										margin-top: -1rem;<br>
+										grid-column: 4/span 6;<br>
+										grid-row: 4/span 1;<br>
+									}<br>
+									<br>
+									.quizCardImg{<br>
+										width: 95%;<br>
+									}<br>
+									<br>
+									.quizCard{<br>
+										margin-bottom: 1.5rem;<br>
+									}<br>
+									<br>
+									.quizCard:nth-of-type(2){<br>
+										grid-column: 4/span 2;<br>
+										grid-row: 5/span 1;<br>
+									}<br>
+									<br>
+									.quizCard:nth-of-type(3){<br>
+										grid-column: 6/span 2;<br>
+										grid-row: 5/span 1;<br>
+									}<br>
+									<br>
+									.quizCard:nth-of-type(4){<br>
+										grid-column: 8/span 2;<br>
+										grid-row: 5/span 1;<br>
+									}<br>
+									<br>
+									.quizCard:nth-of-type(5){<br>
+										grid-column: 4/span 2;<br>
+										grid-row: 6/span 1;<br>
+									}<br>
+									<br>
+									.quizCard:last-of-type{<br>
+										grid-column: 6/span 2;<br>
+										grid-row: 6/span 1;<br>
+									}<br>
+								</code>
 							</div>
 						</div>
 					</div>
