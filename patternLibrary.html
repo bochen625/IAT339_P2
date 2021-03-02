@@ -706,27 +706,241 @@
 
 				<!--Our Values-->
 				<div class="patternContainer">
-					<h4> Our Values </h4>
+					<h4> Our Values Module</h4>
 					<p class="note">Description: Used to show the company values. Created and maintained by Shaanti.</p>
 					
 					<div class="patternOverview">
-						<div class="companyValueContainer">
+						<div class="threeBoxContainer">
 							<h2 class="moduleHeader"> Our values</h2>
 
-							<div class="companyValueCards">
+							<div class="valueAndBlogCard">
 								<p class="companyValues">Build your space</p>
 							</div>
 
-							<div class="companyValueCards">
+							<div class="valueAndBlogCard">
 								<p class="companyValues">Be creative</p>
 							</div>
 
-							<div class="companyValueCards">
+							<div class="valueAndBlogCard">
 								<p class="companyValues">Transform your workflow</p>
+							</div>
+						</div>
+
+						<div class="codeSnippetContainer">
+							<div class="codeSnippetPattern">
+								<p class="codeSnippetTitle">HTML</p>
+								<code>
+									&lt;div class="threeBoxContainer"&gt;<br>
+										&lt;h2 class="moduleHeader"&gt; Our values&lt;/h2&gt;<br>
+										<br>
+										&lt;div class="valueAndBlogCard"&gt;<br>
+											&lt;p class="companyValues"&gt;Build your space&lt;/p&gt;<br>
+										&lt;/div&gt;<br>
+										<br>
+										&lt;div class="valueAndBlogCard"&gt;<br>
+											&lt;p class="companyValues"&gt;Be creative&lt;/p&gt;<br>
+										&lt;/div&gt;<br>
+										<br>
+										&lt;div class="valueAndBlogCard"&gt;<br>
+											&lt;p class="companyValues"&gt;Transform your workflow&lt;/p&gt;<br>
+										&lt;/div&gt;<br>
+									&lt;/div&gt;
+								</code>
+							</div>
+
+							<div class="codeSnippetPattern">
+								<p class="codeSnippetTitle">CSS</p>
+								<code>
+									.threeBoxContainer{<br>
+										display:grid;<br>
+										grid-template-columns: repeat(12, 1fr);<br>
+										grid-column-gap: 1.5rem<br>
+									}<br>
+									<br>
+									.moduleHeader{<br>
+										grid-column: 1/span 6;<br>
+									}<br>
+									<br>
+									.valueAndBlogCard{<br>
+										background-image: var(--gradientColour);<br>
+										min-height: 31.5rem;<br>
+										position: relative;<br>
+									}<br>
+									<br>
+									.valueAndBlogCard:first-of-type{<br>
+										grid-column: 1/span 4;<br>
+									}<br>
+									<br>
+									.valueAndBlogCard:nth-of-type(2){<br>
+										grid-column: 5/span 4;<br>
+									}<br>
+									<br>
+									.valueAndBlogCard:last-of-type{<br>
+										grid-column: 9/span 4;<br>
+									}<br>
+									<br>
+									.companyValues{<br>
+										text-align: center;<br>
+										padding-top: 13rem;<br>
+										font-size: 1.25rem;<br>
+									}
+								</code>
 							</div>
 						</div>
 					</div>
 				</div>
+
+				<!-- Blog Module: Inspirations and Ideas-->
+				<div class="patternContainer">
+					<h4> Blog Module</h4>
+					<p class="note">Description: Used to recommend articles that would inspire how an individual decorates their space. Created by Bonnie, Shaanti, Johnathan. Maintained by Bonnie.</p>
+					
+					<div class="patternOverview">
+						<div class="threeBoxContainer">
+							<h2 class="moduleHeader"> Inspirations and Ideas</h2>
+
+							<!--Blog Post 1-->
+							<div class="valueAndBlogCard">
+								<a href="#"> <img src="img/blog1.png" class="blogImg" alt="light bulb"> </a>
+								<a href="#"> <img src="img/blogDarkImg1.png" class="blogBlurredImgBg" alt="Low contrast photo of the light bulb"> </a>
+								<div class="blogInfoBackground">
+									<h4 class="blogTitle"> Lamp Set-up Inspirations</h4>
+									<p class="blogDescription"> Looking for inspiration to spice up your room? From task lighting to ambient lighting, there are multiple ways to lay out how your room should...</p>
+									<a href="#" class="inTextCTAStyle">read more</a>
+								</div>
+							</div>
+
+							<!--Blog Post 2-->
+							<div class="valueAndBlogCard">
+								<a href="#"> <img src="img/blog2.png" class="blogImg" alt="Four lamps on a desk"> </a>
+								<a href="#"> <img src="img/blogDarkImg2.png" class="blogBlurredImgBg" alt="Low contrast of four lamps on a desk"> </a>
+								<div class="blogInfoBackground">
+									<h4 class="blogTitle"> Lighting Your Workspace</h4>
+									<p class="blogDescription"> The type of lighting in your room can influence your productivity. Here’s a list of things to consider when setting up your ideal workspace.</p>
+									<a href="#" class="inTextCTAStyle">read more</a>
+								</div>
+							</div>
+
+							<!--CTA for Blog Module-->
+							<div class="valueAndBlogCard">
+								<h3 class="productCardText"> Explore our blogs to get more inspiration and ideas</h3>
+								<a href="#" class="btnStyle" id="blogCTA">Discover More</a>
+							</div>
+						</div>
+
+						<div class="codeSnippetContainer">
+							<div class="codeSnippetPattern">
+								<p class="codeSnippetTitle">HTML</p>
+								<code>
+									&lt;div class="threeBoxContainer"&gt;<br>
+										&lt;h2 class="moduleHeader"&gt; Inspirations and Ideas&lt;/h2&gt;<br>
+										<br>
+										&lt;!--Blog Post 1--&lt;<br>
+										&lt;div class="valueAndBlogCard"&gt;<br>
+											&lt;a href="#"&gt;&lt;img src="img/blog1.png" class="blogImg" alt="light bulb"&gt; &lt;/a&gt;<br>
+											&lt;a href="#"&gt;&lt;img src="img/blogDarkImg1.png" class="blogBlurredImgBg" alt="Low contrast photo of the light bulb"&gt; &lt;/a&gt;<br>
+											&lt;div class="blogInfoBackground"&gt;<br>
+												&lt;h4 class="blogTitle"&gt; Lamp Set-up Inspirations&alt;/h4&gt;<br>
+												&lt;p class="blogDescription"&gt; Looking for inspiration to spice up your room? From task lighting to ambient lighting, there are multiple ways to lay out how your room should...&lt;/p&gt;<br>
+												&lt;a href="#" class="inTextCTAStyle"&gt;read more&lt;/a&gt;<br>
+											&lt;/div&gt;<br>
+										&lt;/div&gt;<br>
+										<br>
+										&lt;!--Blog Post 2--&gt;<br>
+										&lt;div class="valueAndBlogCard"&gt;<br>
+											&lt;a href="#"&gt;&lt;img src="img/blog2.png" class="blogImg" alt="Four lamps on a desk"&gt;&lt;/a&gt;<br>
+											&lt;a href="#"&gt;&lt;img src="img/blogDarkImg2.png" class="blogBlurredImgBg" alt="Low contrast of four lamps on a desk"&gt;&lt;/a&gt;<br>
+											&lt;div class="blogInfoBackground"&gt;<br>
+												&lt;h4 class="blogTitle"&gt; Lighting Your Workspace&alt;/h4&gt;<br>
+												&lt;p class="blogDescription"&gt; The type of lighting in your room can influence your productivity. Here’s a list of things to consider when setting up your ideal workspace.&lt;/p&gt;<br>
+												&lt;a href="#" class="inTextCTAStyle"&gt;read more&lt;/a&gt;<br>
+											&lt;/div&gt; <br>
+										&lt;/div&gt; <br>
+										<br>
+										&lt;!--CTA for Blog Module--&gt;<br>
+										&lt;div class="valueAndBlogCard"&gt;<br>
+											&lt;h3 class="productCardText"&gt; Explore our blogs to get more inspiration and ideas&lt;/h3&gt;<br>
+											&lt;a href="#" class="btnStyle" id="productCTA"&gt;Discover More&lt;/a&gt;<br>
+										&lt;/div&gt;<br>
+									&lt;/div&gt;
+								</code>
+							</div>
+
+							<div class="codeSnippetPattern">
+								<p class="codeSnippetTitle">CSS</p>
+								<code>
+									.threeBoxContainer{<br>
+										display:grid;<br>
+										grid-template-columns: repeat(12, 1fr);<br>
+										grid-column-gap: 1.5rem<br>
+									}<br>
+									<br>
+									.moduleHeader{<br>
+										grid-column: 1/span 6;<br>
+									}<br>
+									<br>
+									.valueAndBlogCard{<br>
+										background-image: var(--gradientColour);<br>
+										min-height: 31.5rem;<br>
+										position: relative;<br>
+									}<br>
+									<br>
+									.valueAndBlogCard:first-of-type{<br>
+										grid-column: 1/span 4;<br>
+									}<br>
+									<br>
+									.valueAndBlogCard:nth-of-type(2){<br>
+										grid-column: 5/span 4;<br>
+									}<br>
+									<br>
+									.valueAndBlogCard:last-of-type{<br>
+										grid-column: 9/span 4;<br>
+									}<br>
+									<br>
+									.blogImg{<br>
+										width: 100%;<br>
+										position: relative;<br>
+										z-index: -1;<br>
+									}<br>
+									<br>
+									.blogBlurredImgBg{<br>
+										width: 100%;<br>
+										height: 15rem;<br>
+										object-fit: cover;<br>
+										object-position: 0% 50%;<br>
+										margin-top: -50rem;<br>
+										filter: blur(0.2em);<br>
+									}<br>
+									<br>
+									.blogTitle{<br>
+										color: white;<br>
+										margin-top: -13rem;<br>
+										padding-left: 3.5rem;<br>
+									}<br>
+									<br>
+									.blogDescription{<br>
+										color: white;<br>
+										padding-left: 3.5rem;<br>
+										padding-right: 3.5rem;<br>
+									}<br>
+									<br>
+									.inTextCTAStyle{<br>
+										font-weight: bold;<br>
+										color: white;<br>
+										padding-left: 3.5rem;<br>
+									}<br>
+									<br>
+									.blogInfoBackground{<br>
+										position: absolute;<br>
+										z-index: 1;<br>
+									}<br>
+								</code>
+							</div>
+						</div>
+					</div>
+				</div>
+			
+
 			</div>
 
 		</div>

@@ -63,7 +63,7 @@ h1{
 
 /*-----------Typography-----------*/
 .patternOverview{
-	grid-column:1/span 10;
+	grid-column:1/span 12;
 }
 
 /*-----------Interactive Elements-----------*/
@@ -207,22 +207,23 @@ h1{
 	grid-column-gap: 2rem;
 }
 
-/*Our Values Module*/
-.companyValueContainer{
+/*Container for 3 boxes (Used for Company Values and Blog Module)*/
+.threeBoxContainer{
 	display:grid;
 	grid-template-columns: repeat(12, 1fr);
 	grid-column-gap: 1.5rem
 }
 
-.companyValueCards:first-of-type{
+/*Our Values Module*/
+.valueAndBlogCard:first-of-type{
 	grid-column: 1/span 4;
 }
 
-.companyValueCards:nth-of-type(2){
+.valueAndBlogCard:nth-of-type(2){
 	grid-column: 5/span 4;
 }
 
-.companyValueCards:last-of-type{
+.valueAndBlogCard:last-of-type{
 	grid-column: 9/span 4;
 }
 
@@ -657,27 +658,28 @@ h1{
 		grid-column: 1/span 9;
 		grid-row-start: 5;
 	}
+}
 
-	@media screen and (max-width: 57em){
-		.imgContainer{
-			margin-left: 3.9rem;
-		}
+@media screen and (max-width: 57em){
+	.imgContainer{
+		margin-left: 3.9rem;
+	}
 
-		.imgContainer img{
-			width: 37rem;
-		}
+	.imgContainer img{
+		width: 37rem;
+	}
 
-		.featureBtn{
-			padding-left: 7rem;
-		}
+	.featureBtn{
+		padding-left: 7rem;
+	}
+}
 
-		@media screen and (max-width: 55em){
-		.imgContainer{
-			margin-left: 2.9rem;
-		}
+@media screen and (max-width: 55em){
+	.imgContainer{
+		margin-left: 2.9rem;
+	}
 
-		.imgContainer img{
-			width: 26rem;
-		}
+	.imgContainer img{
+		width: 26rem;
 	}
 }

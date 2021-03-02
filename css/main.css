@@ -78,6 +78,7 @@ body {
 	font-size: 1rem;
 }
 
+
 p a{
 	font-weight: bold;
 }
@@ -342,15 +343,61 @@ label{
 }
 
 /*-----------Value Module-----------*/
-.companyValueCards{
+.valueAndBlogCard{
 	background-image: var(--gradientColour);
-	min-height: 40vh;
+	min-height: 31.5rem;
+	position: relative;
 }
 
 .companyValues{
 	text-align: center;
-	padding-top: 10rem;
+	padding-top: 13rem;
 	font-size: 1.25rem;
+}
+
+/*-----------Blog Module-----------*/
+/*How to overlap images (position and z-index property): https://www.w3docs.com/snippets/css/how-to-position-one-image-on-top-of-another-in-html-css.html*/
+.blogImg{
+	width: 100%;
+	position: relative;
+	z-index: -1;
+}
+
+.blogBlurredImgBg{
+	width: 100%;
+	height: 15rem;
+	object-fit: cover;
+	object-position: 0% 50%;
+	margin-top: -50rem;
+	filter: blur(0.2em);
+}
+
+.blogTitle{
+	color: white;
+	margin-top: -13rem;
+	padding-left: 3.5rem;
+}
+
+.blogDescription{
+	color: white;
+	padding-left: 3.5rem;
+	padding-right: 3.5rem;
+}
+
+.inTextCTAStyle{
+	font-weight: bold;
+	color: white;
+	padding-left: 3.5rem;
+}
+
+.blogInfoBackground{
+	position: absolute;
+	z-index: 1;
+}
+
+#blogCTA{
+	margin-top: 2rem;
+	margin-left: 3rem;
 }
 
 /*-----------Colours-----------*/
