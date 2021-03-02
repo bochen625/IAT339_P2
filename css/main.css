@@ -341,6 +341,33 @@ label{
 	margin-left:-0.5rem; /*centers text*/
 }
 
+/*-----------Footer Module-----------*/
+.footBarContainer{
+	background-color: white;
+	box-shadow: var(--dropShadow);
+}
+
+.footerButtons {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+/*	overflow: hidden;*/
+}
+
+.footerButtons li{
+	float: right;
+	margin: 0.15rem;
+}
+
+.footerButtons a {
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	padding: 0.25rem;
+	color: var(--textColour);
+	margin: 1.25rem;
+	margin-top: 1.75rem;
+}
 
 
 /*-----------Colours-----------*/
