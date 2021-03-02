@@ -939,7 +939,73 @@
 						</div>
 					</div>
 				</div>
-			
+
+				<!-- Quiz Questions Variation 1-->
+				<div class="patternContainer">
+					<h4> Quiz Module: Text (Multiple Choice) Selection</h4>
+					<p class="note">Description: Used to recommend lighting products based on the individual's preference and needs. Created by Bonnie and maintained by Bonnie.</p>
+					
+					<div class="patternOverview">
+						<div class="quizContainer">
+							<div class="progressBarBorder">
+								<div class="progressBarProgress"></div>
+							</div>
+							<p class="questionNumber">Q2 of 7:</p>
+							<h2 class="quizQuestion"> What should the height of the lamp be?</h2>
+							<button class="quizBtnStyle">Under 12 inches</button>
+							<button class="quizBtnStyle">13-18 inches</button>
+							<button class="quizBtnStyle">19-24 inches</button>
+							<button class="quizBtnStyle">Over 24 inches</button>
+						</div>
+					</div>
+				</div>
+
+				<!-- Quiz Questions Variation 2-->
+				<div class="patternContainer">	
+					<h4> Quiz Module: Image selection</h4>		
+					<div class="patternOverview">
+						<div class="quizContainer">
+							<p class="questionNumber">Q5 of 7:</p>
+							<h2 class="quizQuestion"> What will you use the lamp for?</h2>
+
+							<div class="progressBarBorder">
+								<div class="progressBarProgress" id="quizQFive"></div>
+							</div>
+
+							<!-- Embedding an image in a button class: https://stackoverflow.com/questions/8683528/embed-image-in-a-button-element -->
+							<div class="quizCard">
+								<form action="/action_page.php" method="get">
+									<input type="image" src="img/reading.png" class="quizCardImg" alt="books stacked on each other">
+									<label for="readingNWriting">Reading / Writing</label>
+								</form>
+							</div>
+
+							<div class="quizCard">
+								<form action="/action_page.php" method="get">
+									<input type="image" src="img/officeWork.png" class="quizCardImg" alt="person working on a laptop">
+									<label for="readingNWriting">Office Work</label>
+								<form action="/action_page.php" method="get">
+							</div>
+
+							<div class="quizCard">
+								<form action="/action_page.php" method="get">
+									<input type="image" src="img/decoration.png" class="quizCardImg" alt="decorative candle lights">
+									<label for="readingNWriting">Decoration</label>
+								</form>
+							</div>
+							
+							<div class="quizCard">
+								<input type="image" src="img/lightUpRoom.png" class="quizCardImg" alt="living room with a lot of lights">
+								<label for="readingNWriting">To light up a room</label>
+							</div>
+
+							<div class="quizCard">
+								<input type="image" src="img/other.png" class="quizCardImg" alt="blank image">
+								<label for="readingNWriting">Other</label>
+							</div>
+						</div>
+					</div>
+				</div>
 
 			</div>
 

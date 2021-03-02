@@ -400,6 +400,65 @@ label{
 	margin-left: 3rem;
 }
 
+/*-----------Quiz Module-----------*/
+.quizContainer{
+	background-color: white;	
+}
+
+.progressBarBorder{
+	width: 98%;
+	height: 1.5rem;
+	background-color: white;
+	border-radius: 0.2rem;
+	border: 0.1rem solid var(--textColour);
+}
+
+.progressBarProgress{
+	width: 14%;
+	height: 1.4rem;
+	background-color: var(--CTAColour);
+	border-radius: 0.2rem;
+	margin-top: -0.05rem;
+}
+
+.quizQuestion{
+	margin-top: -1rem;
+}
+
+/*-----------Quiz (Text MC)-----------*/
+.quizBtnStyle{
+	display: inline-block;
+	background-color: white;
+	border-radius: 0.75rem;
+	border: 0.1rem solid var(--CTAColour);
+	width: 95%;
+	font-weight: bold;
+	font-size:1rem;
+	color: var(--CTAColour);
+	text-align: center;
+	text-decoration:none;
+	padding: 0.75em;
+	margin-bottom: 1.5rem;
+}
+
+.quizBtnStyle:hover{
+	border: 0.2rem solid var(--CTAColour);
+}
+
+/*-----------Quiz (Image selection)-----------*/
+.quizCardImg{
+	width: 95%;
+}
+
+.quizCard{
+	margin-bottom: 1.5rem;
+}
+
+/*Progress Bar: Q5 of 7*/
+#quizQFive{
+	width: 57%;
+}
+
 /*-----------Colours-----------*/
 #CTAColour{
 	background-color: var(--CTAColour);
